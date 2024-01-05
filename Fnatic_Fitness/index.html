@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FNatic Fitness</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" type = "text/css" href ="style.css">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/> 
+    </head>
+    <body>
+        <!--navbar-->
+        <nav>
+            <a href = "#" class = "logo"><span>FNatic</span><B>Fitness</B>.</a>
+            <ul class = "sidebar">
+                <li onClick = hideSidebar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href = "#home">Home</a></li>
+                <li><a href = "#facilities">Facilities</a></li>
+                <li><a href = "#program">Program</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li class = "hideNav"><a href = "#home">Home</a></li>
+                <li class = "hideNav"><a href = "#facilities">Facilities</a></li>
+                <li class = "hideNav"><a href = "#program">Program</a></li>
+                <li class = "hideNav"><a href = "#contact">Contact</a></li>
+                <li class = "menu-btn" onClick = showSidebar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+        <!--home section-->
+        <section id="home" class = "home view">
+            <div class = "highlights">
+                <h3>Lets Build Your Body More Aesthetic With Us</h3>
+                <h1><span>Fnatic</span><b> Fitness</b></h1><br>
+                <p class = "tagline">
+                    We are a fitness center that offers you the best in personalized training and facilities to help you achieve your goals.<br>
+                </p>
+            </div>
+            <div class = "background"></div>
+        </section>
+        <!--facilities section-->
+        <section id="facilities" class = "facilities view">
+            <div class = "main">
+                <h2>Our<b> Facilities:</b></h2>
+                <h6>All persons who already be a member in our fitness, they can access all of our facilities, we have a grade A facilities here.</h6>
+            </div>
+
+            <div class = "content">
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/yoga_class.jpg" alt="">
+                    </div>
+                    <div class = "details">Yoga Class</div>
+                    <p>Our fitness also has yoga classes, you can join them after becoming our fitness member.</p>
+                </div>
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/cardio_area.jpg" alt="">
+                    </div>
+                    <div class = "details">Cardio Area</div>
+                    <p>You can use our cardio machine before or after workout.</p>
+                </div>
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/bedroom.jpg" alt="">
+                    </div>
+                    <div class = "details">Bathroom</div>
+                    <p>comfortable, clean and complete bathroom for members.</p>
+                </div>
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/locker_room.jpg" alt="">
+                    </div>
+                    <div class = "details">Locker Room</div>
+                    <p>We maximize the locker room for members so that they are always comfortable with spacious and clean locker room conditions.</p>
+                </div>
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/pilates_area.jpg" alt="">
+                    </div>
+                    <div class = "details">Pilates Area</div>
+                    <p>Our fitness also has pilates classes, you can join them after becoming our fitness member.</p>
+                </div>
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/sauna_area.jpg" alt="">
+                    </div>
+                    <div class = "details">Sauna Area</div>
+                    <p>Our fitness also has sauna area, you can join them after becoming our fitness member.</p>
+                </div>
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/weights_area.jpg" alt="">
+                    </div>
+                    <div class = "details">Weigths Area</div>
+                    <p>We also have a complete set of gym machines and weights so that members will feel comfortable.</p>
+                </div>
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/cycling.jpg" alt="">
+                    </div>
+                    <div class = "details">Cycling Area</div>
+                    <p>We also have a cycling area or cycling class for our members.</p>
+                </div>
+            </div>
+        </section>
+        <!--workout-->
+        <section id = "program" class = "program view">
+            <div class = "title">
+                <h5>Our Best</h5>
+                <h3>Program</h3>
+                <h4>For Your Body</h4>
+            </div>
+
+            <div class = "content">
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/flex_muscle.png" alt="">
+                    </div>
+                    <div class = "details">Flex Muscle</div>
+                    <p>Creating tension that's temporarily making the muscle fibers smaller or contracted.</p>
+                </div>
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/cardio.png" alt="">
+                    </div>
+                    <div class = "details">Cardio Exercise</div>
+                    <p>is any rhythmic activity that raises your heart rate into your target heart rate zone. This is the zone where you burn the most fat and calories..</p>
+                </div>
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/weight_lifting.png" alt="">
+                    </div>
+                    <div class = "details">Weight Lifting</div>
+                    <p>physical exercises and sports in which people lift weights, often in the form of dumbbells or barbells. People engage in weightlifting for a variety of different reasons..</p>
+                </div>
+                <div class = "frame">
+                    <div class = "box">
+                        <img src="image/yoga.png" alt="">
+                    </div>
+                    <div class = "details">Yoga Exercise</div>
+                    <p>Yogic practices include breathing techniques, postures, relaxation, chanting, and other meditation methods..</p>
+                </div>
+            </div>
+        </section>
+        <!--contact us section-->
+        <section id= "contact" class = "contact view">
+            <div class = "footer_loct">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.6372617528164!2d106.85436407356397!3d-6.567384493425902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c6e6def1b203%3A0x68cbed37dfe846f9!2sAEON%20MALL%20Sentul%20City!5e0!3m2!1sid!2sid!4v1704087431614!5m2!1sid!2sid" width="80%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+                <div class = "service">
+                    <h1>Contact Us</h1>
+                    <i class="ri-whatsapp-fill"> +6283500817422</i>
+                </div>
+        </section>
+    </body>
+</html>
